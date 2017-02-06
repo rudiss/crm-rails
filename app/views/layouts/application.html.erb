@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Overtime</title>
   <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
+<body>
+
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-    <%= render "shared/nav" %>
-      <%= yield %>
+      <%= render "shared/nav" %>
+        <%= yield %>
     </div>
   </div>
-  </div>
-<body>
+</div>
+
+<%= js add_gritter(flash[:notice], tittle: "Rails CRM App Notification", sticky: false)%>
+
 </body>
+
 </html>
