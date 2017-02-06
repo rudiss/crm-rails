@@ -1,0 +1,8 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+         "auto-close-tag.SublimeText3Mode": true,
+          "auto-rename-tag.activationOnLanguage": ["*"],
+           "path-intellisense.extensionOnImport": true,
+"path-intellisense.autoSlashAfterDirectory": false,
+"eslint.enable": true
+}
