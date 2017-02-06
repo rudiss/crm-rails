@@ -1,7 +1,7 @@
 <%= form_for @post, class: "form-horizontal" do |f| %>
 
 <% if @post.errors.any?%>
-<% @post.errors.full_messages.each do |error|%>
+<% @post.errros.full_messages.each do |error|%>
   <%= js add_gritter(error, title: "CRM Rails Notification", sticky: false)%>
 <div class="form-group">
   <%= f.label :date, class: "col-sm-2 control-label" %>
