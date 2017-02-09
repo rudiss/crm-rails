@@ -6,7 +6,7 @@ RSpec.describe Post, type: :model do
       @post = FactoryGirl.create(:post)
     end
 
-    xit 'can be created' do
+    it 'can be created' do
       expect(@post).to be_valid
     end
 
