@@ -19,7 +19,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'gritter', '~> 1.2' #alert style
 gem 'administrate', '~> 0.3.0'
 gem 'bourbon'
-
+gem 'pundit', '~> 1.1'
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3.0'
