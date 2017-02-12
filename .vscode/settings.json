@@ -5,15 +5,10 @@
     "path-intellisense.extensionOnImport": true,
     "path-intellisense.autoSlashAfterDirectory": false,
     "eslint.enable": true,
-    // Controls if quick suggestions should show up while typing
     "editor.quickSuggestions": true,
-
-    // Controls if suggestions should be accepted with "Enter" - in addition to "Tab". Helps to avoid ambiguity between inserting new lines and accepting suggestions.
     "editor.acceptSuggestionOnEnter": true,
-
-    // Controls the delay in ms after which quick suggestions will show up.
     "editor.quickSuggestionsDelay": 10,
+    "editor.wordBasedSuggestions": true,
+    "editor.tabSize": 2
 
-    // Enable word based suggestions
-    "editor.wordBasedSuggestions": true
 }
