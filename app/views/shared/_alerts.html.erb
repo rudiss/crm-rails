@@ -1,0 +1,7 @@
+<% if flash[:alert] %>
+  <%= js add_gritter(flash[:alert], tittle: "Rails CRM Notification Alert", sticky: false)%>
+<% elsif flash[:error] %>
+  <%= js add_gritter(flash[:error], tittle: "Rails CRM Notification Error", sticky: false)%>
+<% else %>
+  <%= js add_gritter(flash[:notice], tittle: "Rails CRM Notification ", sticky: false)%>
+<% end %>  
