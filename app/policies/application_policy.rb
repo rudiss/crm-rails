@@ -30,6 +30,10 @@ class ApplicationPolicy
     update?
   end
 
+  def admin_types 
+    ['AdminUser']
+  end
+
   def destroy?
     false
   end
