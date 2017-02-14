@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   # if dont have permit params will always return nilClass
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   def index
-    @posts = Post.all
+    @posts = current_user.posts
   end
 
   def new
