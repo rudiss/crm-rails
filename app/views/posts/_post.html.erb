@@ -5,6 +5,7 @@
   <td><%= post.date %></td>
   <%# for do brake the table %>
   <td><%= truncate(post.rationale) %></td> 
+  <td><%= status_label post.status%></td>
   <!-- get id of edit to rspec test -->
   <td> <%= link_to 'Edit', edit_post_path(post) , id: "edit_#{post.id}" %></td>
   <td> <%= link_to 'Delete', post_path(post), method: :delete, 
