@@ -24,6 +24,6 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   config.include FactoryGirl::Syntax::Methods
   config.before(:each) do
-    stub_const("SmsTool", FakeSMS)
+    stub_const("SmsTool", FakeSms)
   end
 end
