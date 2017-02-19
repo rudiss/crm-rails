@@ -1,11 +1,11 @@
 
 <tr>
   <td><%= post.id %></td>
-  <td><%= post.overtime_resquest %></td>
+  <td><%= post.overtime_request %></td>
   <td><%= post.user.full_name %></td>
   <td><%= post.date %></td>
   <%# for do brake the table %>
-  <td><%= truncate(post.rationale) %></td> 
+  <td><%=link_to truncate(post.rationale), post %></td> 
   <td><%= status_label post.status%></td>
   <!-- get id of edit to rspec test -->
   <td> <%= link_to 'Edit', edit_post_path(post) , id: "edit_#{post.id}" if policy(post).update? %></td>
