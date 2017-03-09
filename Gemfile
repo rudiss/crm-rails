@@ -21,6 +21,7 @@ gem 'administrate', '~> 0.3.0'
 gem 'bourbon'
 gem 'pundit', '~> 1.1'
 gem 'twilio-ruby', '~> 4.13'
+gem 'font-awesome-sass'
 gem 'kaminari' #paginate
 gem 'dotenv-rails', :groups => [:development, :test]
 
