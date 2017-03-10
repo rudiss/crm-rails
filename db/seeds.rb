@@ -1,4 +1,4 @@
-@user = User.create!(email: "teste@teste.com",
+@user = User.create(email: "teste@teste.com",
                     password: "123321",
                     password_confirmation: "123321",
                     first_name: "Jhon",
@@ -24,8 +24,8 @@ puts "1 AdminUser  created"
 end
 puts "100 post has been created!"
 
-100. times do |audit_log|
-  AuditLog.create(user_id: @user.id, status: 0, start_date: Date.today - 6.days)
-end
+  AuditLog.create!(user_id: @user.id, status: 0, start_date: Date.today - 6.days)
+  AuditLog.create!(user_id: @user.id, status: 0, start_date: Date.today - 13.days)
+  AuditLog.create!(user_id: @user.id, status: 0, start_date: Date.today - 20.days)
 
-puts "100 AuditLogs has been created!"
+puts "3 AuditLogs has been created!"
